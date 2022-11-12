@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Oswald:regular,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:regular");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../iconfonts/icomoon.eot?ee051i");
+  src: url("../iconfonts/icomoon.eot?ee051i#iefix") format("embedded-opentype"), url("../iconfonts/icomoon.ttf?ee051i") format("truetype"), url("../iconfonts/icomoon.woff?ee051i") format("woff"), url("../iconfonts/icomoon.svg?ee051i#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\e900";
+}
+
+._ibg {
+  position: relative;
+}
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body.ie ._ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body.ie ._ibg img {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.billet-btn {
+  /* Если меньше контейнера */
+  padding-right: 55px;
+  /* Если меньше контейнера */
+  padding-left: 55px;
+  min-height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+@media (max-width: 1110px) {
+  .billet-btn {
+    padding-right: calc(25px + 30 * ((100vw - 320px) / 790));
+  }
+}
+@media (max-width: 1110px) {
+  .billet-btn {
+    padding-left: calc(25px + 30 * ((100vw - 320px) / 790));
+  }
+}
+@media (any-hover: hover) {
+  .billet-btn:active {
+    transform: translateY(2px);
+  }
+}
+
+body {
+  background-color: #ee9f6b;
+  font-family: "Oswald";
+  color: #000;
+  font-size: 14px;
+}
+body._lock-scroll {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+._container {
+  padding: 0px 15px 0px 15px;
+  margin: 0px auto;
+  max-width: 1110px;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header__column {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  justify-content: space-between;
+}
+.header__logo {
+  /* Если меньше контейнера */
+  width: 60px;
+}
+@media (max-width: 1110px) {
+  .header__logo {
+    width: calc(45px + 15 * ((100vw - 320px) / 790));
+  }
+}
+.header__logo img {
+  max-width: 100%;
+}
+.header__burger {
+  /* Если меньше контейнера */
+  width: 50px;
+  /* Если меньше контейнера */
+  height: 50px;
+  background-color: #F7654A;
+}
+@media (max-width: 1110px) {
+  .header__burger {
+    width: calc(37px + 13 * ((100vw - 320px) / 790));
+  }
+}
+@media (max-width: 1110px) {
+  .header__burger {
+    height: calc(37px + 13 * ((100vw - 320px) / 790));
+  }
+}
+
+.start {
+  background-image: url("../img/first-screen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.start__title {
+  font-weight: 500;
+  font-size: 64px;
+  /* Если меньше контейнера */
+  font-size: 64px;
+  line-height: 148.4375%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+  /* Если меньше контейнера */
+  padding-top: 192px;
+}
+@media (max-width: 1110px) {
+  .start__title {
+    font-size: calc(41px + 23 * ((100vw - 320px) / 790));
+  }
+}
+@media (max-width: 1110px) {
+  .start__title {
+    padding-top: calc(125px + 67 * ((100vw - 320px) / 790));
+  }
+}
+.start__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  /* Если меньше контейнера */
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  /* Если меньше контейнера */
+  padding-top: 35px;
+}
+@media (max-width: 1110px) {
+  .start__subtitle {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 790));
+  }
+}
+@media (max-width: 1110px) {
+  .start__subtitle {
+    padding-top: calc(20px + 15 * ((100vw - 320px) / 790));
+  }
+}
