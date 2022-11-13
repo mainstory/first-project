@@ -257,6 +257,11 @@ body._lock-scroll {
   background-repeat: no-repeat;
   height: 100vh;
 }
+@media (max-height: 700.2px) {
+  .start {
+    height: 700.2px;
+  }
+}
 .start__title {
   font-weight: 500;
   font-size: 64px;
@@ -306,6 +311,16 @@ body._lock-scroll {
 .score {
   margin-top: -148px;
   margin-bottom: 100px;
+  /* Если меньше контейнера */
+  margin-bottom: 100px;
+}
+@media (max-width: 1110px) {
+  .score {
+    margin-bottom: calc(40px + 60 * ((100vw - 320px) / 790));
+  }
+}
+.score__container {
+  padding: 0 10px;
 }
 .score__body {
   background: #f7f7f7;
@@ -343,7 +358,7 @@ body._lock-scroll {
     padding-right: calc(30px + 100 * ((100vw - 320px) / 790));
   }
 }
-@media (max-width: 768.2px) {
+@media (max-width: 552.2px) {
   .score__column {
     grid-template-columns: repeat(2, 1fr);
   }
